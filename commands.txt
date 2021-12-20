@@ -1,0 +1,2 @@
+node app.js                     // to run node file on server
+npm init                        // to initialise package
