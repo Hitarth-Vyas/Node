@@ -1,2 +1,3 @@
 node app.js                     // to run node file on server
 npm init                        // to initialise package
+By definig the start command in scripts in package.json we can type 'npm start' at the place of 'node filename.js'
