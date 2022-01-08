@@ -4,3 +4,4 @@ By definig the start command in scripts in package.json we can type 'npm start' 
 npm install nodemon --save-dev      // installs nodemon developer tools
 npm install nodemon -g           // installs nodemon globally
 npm install --save express    // to install express for the project
+npm install --save body parser  // installing a third paty package
