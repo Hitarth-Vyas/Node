@@ -1,0 +1,5 @@
+node app.js                     // to run node file on server
+npm init                        // to initialise package
+By definig the start command in scripts in package.json we can type 'npm start' at the place of 'node filename.js' as start is the special case here otherwise the name other than special cases as start use 'npm run [command]' for example if 'start-server' is defined at the place of 'start' then we will use 'npm run start-server' as 'start-server' is not reserved word (for more clarity see file package.json).
+npm install nodemon --save-dev      // installs nodemon developer tools
+npm install nodemon -g           // installs nodemon globally
