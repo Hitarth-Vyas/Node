@@ -1,8 +1,9 @@
-const http = require("http"); // will always use global file named http
-
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
+
+app.use(bodyParser.urlencoded({extended: false}));
 
 // app.use((req, res, next) => {
 //   console.log('In the middleware!');
