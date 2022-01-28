@@ -5,3 +5,4 @@ npm install nodemon --save-dev      // installs nodemon developer tools
 npm install nodemon -g           // installs nodemon globally
 npm install --save express    // to install express for the project
 npm install --save body-parser  // installing a third paty package
+npm install --save ejs pug express-handlebars   //installing the ejs pug express-handlebars packages in our project
