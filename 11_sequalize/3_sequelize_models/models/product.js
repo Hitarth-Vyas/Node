@@ -18,6 +18,6 @@ const Product = sequelize.define('products', {
   description: Sequelize.STRING
 });
 
-module.exports = User;
+module.exports = Product;
 
 // sequelize official docs => https://sequelize.org/
