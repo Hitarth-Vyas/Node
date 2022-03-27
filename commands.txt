@@ -12,3 +12,4 @@ npm install --save mysql12                      // installing mysql2
 npm install --save sequelize                    // installing sequelize
 npm install --save mongodb                      // installing mongodb
 npm install --save mongoose                     // installing mongoose
+https://sequelize.org/                          // sequelize official docs
