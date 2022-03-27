@@ -16,12 +16,14 @@ class User {
     db.collection('users').insertOne(this);
   }
 
-  adToCart(product) {
+  addToCart(product) {
     // const cartProduct = this.cart.items.findIndex(cp => {
     //   return cp._id === product._id;
     // });
 
-    const updatedCart = { items: [{ ...product, quatity: 1 }] };
+    const updatedCart = { 
+      items: [{ productId: new ObjectId(product._id), quatity: 1 }] 
+    };
     const db = getDb();
     return db
       .collection('users')
