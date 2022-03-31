@@ -19,9 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
-  User.findById('624528e70844e62af9bf059f')
+  User.findById('62453462bea3af822d641f86')
     .then(user => {
-      req.user = new User(user.name, user.email, user.cart, user._id);
+      req.user = user;
       next();
     })
     .catch(err => console.log(err));
@@ -41,14 +41,16 @@ mongoose
       if (!user) {
         const user = new User({
           name: 'Max',
-          email: 'spogk@gmail.com',
+          email: 'max@test.com',
           cart: {
-            items: [], 
+            items: []
           }
-        })
+        });
         user.save();
       }
     });
     app.listen(4000);
   })
-  .catch(err => console.log(err));
+  .catch(err => {
+    console.log(err);
+  });
