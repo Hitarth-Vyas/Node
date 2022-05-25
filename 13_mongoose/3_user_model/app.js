@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((req, res, next) => {
-  User.findById('62453462bea3af822d641f86')
+  User.findById('628dcf2d71296d1f9f172585')
     .then(user => {
       req.user = user;
       next();
@@ -34,7 +34,7 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    'mongodb+srv://HitV:Hitit1805;@cluster0.axbj5.mongodb.net/shopdb?retryWrites=true'
+    'mongodb+srv://HitV:zVSgyvciJkgYcQta@cluster0.axbj5.mongodb.net/shopdb?retryWrites=true'
   )
   .then(result => {
     User.findOne().then(user => {
@@ -48,9 +48,7 @@ mongoose
         });
         user.save();
       }
-    });
-    app.listen(4000);
+    })
+  app.listen(4000);
   })
-  .catch(err => {
-    console.log(err);
-  });
+  .catch(err => console.log(err));
