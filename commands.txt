@@ -7,3 +7,6 @@ npm install --save express    // to install express for the project
 npm install --save body-parser  // installing a third paty package
 npm install --save ejs pug express-handlebars   //installing the ejs pug express-handlebars packages in our project
 https://pugjs.org/api/getting-started.html      //pug official docs
+
+npm install --save express-session
+npm install --save connect-mongodb-session
