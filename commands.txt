@@ -8,6 +8,9 @@ npm install --save body-parser  // installing a third paty package
 npm install --save ejs pug express-handlebars   //installing the ejs pug express-handlebars packages in our project
 https://pugjs.org/api/getting-started.html      //pug official docs
 
+https://pugjs.org/api/getting-started.html      // pug official docs
+npm install --save express ejs body-parser      //  middlewares for parsing text, JSON, url-encoded and raw data set through an HTTP request body
+
 npm install --save mysql12                      // installing mysql2
 npm install --save sequelize                    // installing sequelize
 npm install --save mongodb                      // installing mongodb
@@ -18,4 +21,6 @@ npm install --save express-session
 npm install --save connect-mongodb-session
 npm install --save bcryptjs
 npm install --save csurf
+
 npm install --save nodemailer
+npm install --save connect-flash
